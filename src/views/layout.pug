@@ -1,0 +1,28 @@
+block document-info
+
+- const pageTitle = `${pagename} | Project Name`;
+
+doctype html
+html(dir="ltr")
+	head
+		meta(charset="utf-8")
+		title= pageTitle
+
+		meta(name="viewport", content="initial-scale=1.0, user-scalable=no, width=device-width")
+
+		meta(name="description", content="description")
+		meta(name="keywords", content="keywords")
+
+		link(rel="stylesheet", href="./styles.scss")
+		link(rel="icon", type="image/png", href="./assets/images/favicon.png")
+
+		meta(name="theme-color", content="#ffffff")
+
+		block head
+
+	body.bg-yellow-100
+		block content
+
+		script(src="./scripts/index.ts", type="module")
+
+		block scripts
